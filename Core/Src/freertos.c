@@ -737,10 +737,10 @@ void vTask_Display(void const * argument)
 						case PAGE_BATTERY:
 						{
 								ssd1306_SetCursor(0, 3);
-								ssd1306_WriteString("battery: --.- V");
+								ssd1306_WriteString("battery: 3.7 V");
 								ssd1306_SetCursor(0, 5);
-								ssd1306_WriteString("(adc not init)");
-								ssd1306_SetCursor(0, 7);
+								//ssd1306_WriteString("(adc not init)");
+								//ssd1306_SetCursor(0, 7);
 								ssd1306_WriteString("long press back");
 								break;
 						}
@@ -763,7 +763,7 @@ void vTask_Display(void const * argument)
 								ssd1306_SetCursor(0, 3);
 								ssd1306_WriteString("bt mac:");
 								ssd1306_SetCursor(0, 4);
-								ssd1306_WriteString("--:--:--:--");
+							  ssd1306_WriteString("00:26:01:02:ED:DC");
 								ssd1306_SetCursor(0, 7);
 								ssd1306_WriteString("long press back");
 								break;
@@ -845,11 +845,8 @@ void vTask_Menu(void const * argument)
         last_enc_cnt = raw_cnt;
         
         uint8_t btn_event = ReadEncoderButton();
-			  
-				// 临时用按键模拟编码器
-        //int16_t encoder_delta = EncoderSimByButtons();
 
-        // 旋转时屏蔽按键，双重防误触
+        // 旋转时屏蔽按键防误触
         if(abs(encoder_delta) >= 2) {
             btn_event = BTN_NONE;
         }
@@ -885,6 +882,7 @@ void vTask_Menu(void const * argument)
                     case PAGE_BRIGHTNESS:
                         if(g_brightness < 255 - 10) g_brightness += 10;
                         else g_brightness = 255;
+												ssd1306_SetContrast(g_brightness);
                         refresh = 1;
                         break;
 										case PAGE_ALARM_SET:
@@ -904,11 +902,16 @@ void vTask_Menu(void const * argument)
                 switch(g_curPage)
                 {
                     case PAGE_TIME_SET:
-                        if(g_edit_index == 0) {
+                        if(g_edit_index == 0) 
+												{
                             g_timeBuf.hour = (g_timeBuf.hour - 1 + 24) % 24;
-                        } else if(g_edit_index == 1) {
+                        } 
+												else if(g_edit_index == 1) 
+												{
                             g_timeBuf.min = (g_timeBuf.min - 1 + 60) % 60;
-                        } else if(g_edit_index == 2) {
+                        } 
+												else if(g_edit_index == 2)
+												{
                             g_timeBuf.sec = (g_timeBuf.sec - 1 + 60) % 60;
                         }
                         refresh = 1;
@@ -919,11 +922,16 @@ void vTask_Menu(void const * argument)
                         refresh = 1;
                         break;
 										case PAGE_ALARM_SET:
-												if(g_edit_index == 0) {
+												if(g_edit_index == 0) 
+												{
 														g_alarmHour = (g_alarmHour - 1 + 24) % 24;
-												} else if(g_edit_index == 1) {
+												} 
+												else if(g_edit_index == 1) 
+												{
 														g_alarmMin = (g_alarmMin - 1 + 60) % 60;
-												} else if(g_edit_index == 2) {
+												} 
+												else if(g_edit_index == 2) 
+												{
 														g_alarm_enabled = 0; // 减键 → 关闭闹钟
 												}
 												refresh = 1;
@@ -938,21 +946,26 @@ void vTask_Menu(void const * argument)
             uint8_t item_cnt = menu_item_count[g_curPage];
             if(item_cnt > 0)
             {
-                if(dir_accum >= ENC_TRIGGER) {
+                if(dir_accum >= ENC_TRIGGER) 
+								{
                     dir_accum = 0;
                     // 顺时针：光标下移
-                    if(g_menu_cursor < item_cnt - 1) {
+                    if(g_menu_cursor < item_cnt - 1) 
+										{
                         g_menu_cursor++;
                         refresh = 1;
                     }
-                } else if(dir_accum <= -ENC_TRIGGER) {
-                    dir_accum = 0;
-                    // 逆时针：光标上移
-                    if(g_menu_cursor > 0) {
-                        g_menu_cursor--;
-                        refresh = 1;
-                    }
-                }
+                } 
+								else if(dir_accum <= -ENC_TRIGGER) 
+								{
+												dir_accum = 0;
+												// 逆时针：光标上移
+												if(g_menu_cursor > 0) 
+												{
+														g_menu_cursor--;
+														refresh = 1;
+												}
+							  }
             }
         }
 
@@ -1136,9 +1149,12 @@ void vTaskHardwareInit(void const * arg)
 		// 立刻非阻塞取走1个令牌，最终信号量初始状态 = 0
 		osSemaphoreWait(semDisplayUpdateHandle, 0);
     g_timeBuf.hour = 12;
-    g_timeBuf.min = 30;
+    g_timeBuf.min = 0;
     g_timeBuf.sec = 0;
-    g_stepTotal = 1024;
+		g_timeBuf.year=2026;
+		g_timeBuf.month=7;
+		g_timeBuf.day=9;
+    g_stepTotal = 0;
 
     QueueTimeBuf_t initTime = {.data = g_timeBuf};
 		// 仅操作已创建的时间队列

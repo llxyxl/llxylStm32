@@ -138,3 +138,10 @@ void ssd1306_UpdateScreen(void)
                          &ssd1306_vram[page * 128], 128, 100);
     }
 }
+
+// 亮度调节
+void ssd1306_SetContrast(uint8_t val)
+{
+    ssd1306_WriteCommand(0x81);  // 对比度指令
+    ssd1306_WriteCommand(val);  // 0~255
+}

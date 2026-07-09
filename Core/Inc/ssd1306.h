@@ -15,5 +15,6 @@ void ssd1306_SetCursor(uint8_t x, uint8_t page);
 void ssd1306_WriteChar(char ch);
 void ssd1306_WriteString(const char *str);
 void ssd1306_UpdateScreen(void);
+void ssd1306_SetContrast(uint8_t val);
 
 #endif

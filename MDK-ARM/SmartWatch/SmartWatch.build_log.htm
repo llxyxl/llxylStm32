@@ -27,15 +27,27 @@ Project File Date:  07/04/2026
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil5\ARM\4 ARMCC\Bin'
 Build target 'SmartWatch'
+compiling ssd1306.c...
+compiling stm32f1xx_it.c...
+../Core/Src/stm32f1xx_it.c(100): warning:  #128-D: loop is not reachable
+    while (1)
+../Core/Src/stm32f1xx_it.c: 1 warning, 0 errors
+compiling display.c...
+..\Core\Src\display.c(34): warning:  #177-D: variable "buf"  was declared but never referenced
+      char buf[32];
+..\Core\Src\display.c: 1 warning, 0 errors
+compiling main.c...
+compiling bluetooth.c...
+compiling freertos_tasks.c...
 compiling freertos.c...
 ../Core/Src/freertos.c(224): warning:  #188-D: enumerated type mixed with another type
   		
 sThreadDef(taskHwInit, vTaskHardwareInit, osPriorityHigh+1, 0, 256);
 ../Core/Src/freertos.c: 1 warning, 0 errors
 linking...
-Program Size: Code=37254 RO-data=1330 RW-data=300 ZI-data=13100  
+Program Size: Code=37322 RO-data=1330 RW-data=300 ZI-data=13100  
 FromELF: creating hex file...
-"SmartWatch\SmartWatch.axf" - 0 Error(s), 1 Warning(s).
+"SmartWatch\SmartWatch.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 

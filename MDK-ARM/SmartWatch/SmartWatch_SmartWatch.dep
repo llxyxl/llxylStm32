@@ -4,8 +4,8 @@ F (startup_stm32f103xb.s)(0x6A448765)(--cpu Cortex-M3 -g --apcs=interwork -I C:/
 F (..\Core\Src\font5x8.c)(0x6A4E28DB)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I C:\Users\liuxy\STM32Cube\Repository\STM32Cube_FW_F1_V1.8.7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3-I.\RTE\_SmartWatch-ID:\keil5\ARM\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-ID:\keil5\ARM\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o smartwatch\font5x8.o --omf_browse smartwatch\font5x8.crf --depend smartwatch\font5x8.d)
 I (../Core/Inc/font5x8.h)(0x6A4E28DF)
 I (D:\keil5\ARM\4 ARMCC\include\stdint.h)(0x588B8344)
-F (..\Core\Src\ssd1306.c)(0x6A4E28D3)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I C:\Users\liuxy\STM32Cube\Repository\STM32Cube_FW_F1_V1.8.7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3-I.\RTE\_SmartWatch-ID:\keil5\ARM\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-ID:\keil5\ARM\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o smartwatch\ssd1306.o --omf_browse smartwatch\ssd1306.crf --depend smartwatch\ssd1306.d)
-I (../Core/Inc/ssd1306.h)(0x6A4E28E2)
+F (..\Core\Src\ssd1306.c)(0x6A4EF925)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I C:\Users\liuxy\STM32Cube\Repository\STM32Cube_FW_F1_V1.8.7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3-I.\RTE\_SmartWatch-ID:\keil5\ARM\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-ID:\keil5\ARM\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o smartwatch\ssd1306.o --omf_browse smartwatch\ssd1306.crf --depend smartwatch\ssd1306.d)
+I (../Core/Inc/ssd1306.h)(0x6A4EF8A0)
 I (../Core/Inc/main.h)(0x6A432EB5)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69D8C620)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6A43DB40)
@@ -39,7 +39,7 @@ I (../Core/Inc/i2c.h)(0x6A432EB4)
 I (../Core/Inc/font5x8.h)(0x6A4E28DF)
 I (D:\keil5\ARM\4 ARMCC\include\string.h)(0x588B8344)
 F (..\Core\Inc\font5x8.h)(0x6A4E28DF)()
-F (..\Core\Inc\ssd1306.h)(0x6A4E28E2)()
+F (..\Core\Inc\ssd1306.h)(0x6A4EF8A0)()
 F (..\Core\Inc\i2c.h)(0x6A432EB4)()
 F (..\Core\Inc\mpu6050.h)(0x6A4488CC)()
 F (..\Core\Src\mpu6050.c)(0x6A4E214F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I C:\Users\liuxy\STM32Cube\Repository\STM32Cube_FW_F1_V1.8.7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3-I.\RTE\_SmartWatch-ID:\keil5\ARM\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-ID:\keil5\ARM\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o smartwatch\mpu6050.o --omf_browse smartwatch\mpu6050.crf --depend smartwatch\mpu6050.d)
@@ -123,7 +123,7 @@ I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x69D8C622)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x69D8C622)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x69D8C622)
-I (../Core/Inc/ssd1306.h)(0x6A4E28E2)
+I (../Core/Inc/ssd1306.h)(0x6A4EF8A0)
 I (../Core/Inc/i2c.h)(0x6A432EB4)
 I (D:\keil5\ARM\4 ARMCC\include\math.h)(0x588B8344)
 I (D:\keil5\ARM\4 ARMCC\include\string.h)(0x588B8344)
@@ -160,7 +160,7 @@ I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x69D8C620)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69D8C620)
 I (../Core/Inc/mpu6050.h)(0x6A4488CC)
-I (../Core/Inc/ssd1306.h)(0x6A4E28E2)
+I (../Core/Inc/ssd1306.h)(0x6A4EF8A0)
 I (../Core/Inc/i2c.h)(0x6A432EB4)
 I (D:\keil5\ARM\4 ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\ARM\4 ARMCC\include\math.h)(0x588B8344)
@@ -184,7 +184,7 @@ I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x69D8C622)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x69D8C622)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x69D8C622)
-I (../Core/Inc/ssd1306.h)(0x6A4E28E2)
+I (../Core/Inc/ssd1306.h)(0x6A4EF8A0)
 I (../Core/Inc/main.h)(0x6A432EB5)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69D8C620)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6A43DB40)
@@ -269,7 +269,7 @@ I (../Core/Inc/usart.h)(0x6A45E98B)
 I (../Core/Inc/gpio.h)(0x6A48B9DA)
 I (D:\keil5\ARM\4 ARMCC\include\stdio.h)(0x588B8344)
 I (../Core/Inc/mpu6050.h)(0x6A4488CC)
-I (../Core/Inc/ssd1306.h)(0x6A4E28E2)
+I (../Core/Inc/ssd1306.h)(0x6A4EF8A0)
 I (../Core/Inc/bluetooth.h)(0x6A4E28EE)
 I (../Core/Inc/display.h)(0x6A4E2943)
 I (../Core/Inc/freertos_tasks.h)(0x6A4E2961)
@@ -305,7 +305,7 @@ I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x69D8C620)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x69D8C620)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69D8C620)
-F (../Core/Src/freertos.c)(0x6A4E298A)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I C:\Users\liuxy\STM32Cube\Repository\STM32Cube_FW_F1_V1.8.7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3-I.\RTE\_SmartWatch-ID:\keil5\ARM\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-ID:\keil5\ARM\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o smartwatch\freertos.o --omf_browse smartwatch\freertos.crf --depend smartwatch\freertos.d)
+F (../Core/Src/freertos.c)(0x6A4EF8DC)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/CMSIS/Include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include -I C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I C:\Users\liuxy\STM32Cube\Repository\STM32Cube_FW_F1_V1.8.7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3-I.\RTE\_SmartWatch-ID:\keil5\ARM\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-ID:\keil5\ARM\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o smartwatch\freertos.o --omf_browse smartwatch\freertos.crf --depend smartwatch\freertos.d)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69D8C622)
 I (D:\keil5\ARM\4 ARMCC\include\stddef.h)(0x588B8344)
 I (D:\keil5\ARM\4 ARMCC\include\stdint.h)(0x588B8344)
@@ -350,7 +350,7 @@ I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x69D8C622)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x69D8C622)
 I (../Core/Inc/freertos_tasks.h)(0x6A4E2961)
-I (../Core/Inc/ssd1306.h)(0x6A4E28E2)
+I (../Core/Inc/ssd1306.h)(0x6A4EF8A0)
 I (../Core/Inc/i2c.h)(0x6A432EB4)
 I (../Core/Inc/mpu6050.h)(0x6A4488CC)
 I (../Core/Inc/bluetooth.h)(0x6A4E28EE)
@@ -517,7 +517,7 @@ I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x69D8C620)
 I (C:/Users/liuxy/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.7/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69D8C620)
 I (../Core/Inc/stm32f1xx_it.h)(0x6A43DB3F)
-I (../Core/Inc/ssd1306.h)(0x6A4E28E2)
+I (../Core/Inc/ssd1306.h)(0x6A4EF8A0)
 I (../Core/Inc/i2c.h)(0x6A432EB4)
 I (../Core/Inc/bluetooth.h)(0x6A4E28EE)
 I (../Core/Inc/mpu6050.h)(0x6A4488CC)
